@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Login.LoginController">
+   <children>
+      <Pane layoutX="1.0" prefHeight="400.0" prefWidth="298.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="1.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="TOP" layoutX="16.0" layoutY="75.0" prefHeight="157.0" prefWidth="266.0" text="Papillon Suites" textFill="#1e6838">
+               <font>
+                  <Font name="Comic Sans MS" size="37.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="126.0" fitWidth="124.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/logo.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Label>
+            <Label layoutX="43.0" layoutY="222.0" prefHeight="42.0" prefWidth="212.0" text="Homely &amp; Affordable">
+               <font>
+                  <Font name="Edwardian Script ITC" size="30.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <TextField fx:id="nameField" layoutX="370.0" layoutY="127.0" prefHeight="28.0" prefWidth="192.0" promptText="Username" />
+      <TextField fx:id="passwordField" layoutX="370.0" layoutY="180.0" prefHeight="28.0" prefWidth="192.0" promptText="Password" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="377.0" layoutY="43.0" prefHeight="30.0" prefWidth="59.0" style="-fx-background-color: black;" text="USER" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="443.0" layoutY="43.0" prefHeight="30.0" prefWidth="59.0" text="Login">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="USER" layoutX="337.0" layoutY="147.0" size="24" wrappingWidth="25.0" />
+      <FontAwesomeIconView glyphName="LOCK" layoutX="337.0" layoutY="202.0" size="24" wrappingWidth="19.0" />
+      <JFXButton fx:id="loginButton" buttonType="RAISED" layoutX="407.0" layoutY="242.0" onAction="#goToLoginPage" prefHeight="30.0" prefWidth="93.0" style="-fx-background-color: #f0f0f0;" text="Login" />
+      <Label fx:id="registerLabel" layoutX="490.0" layoutY="366.0" onMouseClicked="#goToRegister" prefHeight="17.0" prefWidth="104.0" text="Register new user" />
+      <Label fx:id="forgotPassword" layoutX="317.0" layoutY="366.0" onMouseClicked="#goToforgotPassword" prefHeight="17.0" prefWidth="104.0" text="Forgot Password?" />
+   </children>
+</AnchorPane>

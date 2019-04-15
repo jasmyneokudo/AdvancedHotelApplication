@@ -1,0 +1,309 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    /*-fx-background-color: #d3d3d3;*/
+    -fx-background-color: lightblue;
+    
+}
+.largeColoredButtons{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0,0,0);
+    -fx-padding: 10;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+    -fx-background-radius: 5;
+}
+.largeColoredButtons:hover {
+    -fx-background-insets:12px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0,0,0);
+    -fx-padding: 10;
+    -fx-font-size:18px;
+    -fx-font-weight:bold;
+    -fx-background-radius: 5;
+}
+.yellowButton{
+    -fx-background-color:  #ffff00;
+}
+.yellowButton:hover {
+    -fx-background-color:  #ffff00;
+    -fx-underline: true;
+}
+.orangeButton{
+    -fx-background-color: rgb(255,140,0);
+    -fx-button-type:raised;
+    -fx-font-size:18px;
+    -fx-font-weight:bold ;
+   
+}
+.buttonText{
+    -fx-font-size: 18px bold;
+}
+.normallabel{
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(0,0,0);
+}
+.italicslabel {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(0,0,0);
+    -fx-font-style:italic;
+}
+.labels:hover {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(0,0,128)
+}
+.texts {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(0,0,0);
+}
+.textfields {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+    -fx-text-fill: rgb(0,0,0);
+    -fx-prompt-text-fill: #000000;
+    
+}
+.card {
+    -fx-background-color: rgb(255.0, 255.0, 255.0);
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);
+    -fx-padding: 0 10 0 10;
+}
+
+.profileTitle {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14;
+}
+
+/*Card and its components*/
+.card {
+    -fx-background-color: rgb(255.0, 255.0, 255.0);
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,1.5);
+    -fx-padding: 0 10 0 10;
+}
+.card-unpadded1 {
+     -fx-background-color:
+        linear-gradient(#f0f0f0 90%, #1f2429 20%, #191d22 10%),
+        linear-gradient(#20262b, #191d22),
+        radial-gradient(center 50% 100%, radius 100%, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
+
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,
+        1.5);
+    -fx-padding: 20 10 0 10;
+}
+.card-unpadded2 {
+    -fx-background-color: rgb(255.0, 255.0, 255.0);
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,
+         1.5);
+   -fx-padding: 0 0 0 0;
+}
+.card-unpadded3 {
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,
+         1.5);
+    -fx-background-color: lightblue;
+   -fx-padding: 0 0 0 0;
+}
+.card-unpadded {
+    -fx-background-color: rgb(255.0, 255.0, 255.0);
+    -fx-background-radius: 4.0;
+    -fx-effect: dropshadow(gaussian, rgb(0.0, 0.0, 0.0, 0.15), 6.0, 0.7, 0.0,
+         1.5);
+   -fx-padding: 40 20 20 20;
+}
+
+
+
+.card-title {
+    -fx-font-size: 20.0px;
+    -fx-padding: 5 0 5 0;
+}
+
+.card-title .texts {
+    -fx-fill: -fx-text-title-color;
+}
+
+.card-subtitle {
+    -fx-font-size: 16.0px;
+    -fx-padding: 5 0 5 0;
+}
+
+.card-subtitle .texts {
+    -fx-fill: -fx-text-subtitle-color;
+}
+/*Custom Labels*/
+.custom-white-label{
+    -fx-text-fill: white;
+    -fx-font-size:18.0px;
+}
+.custom-white-title-label{
+    -fx-text-fill: white;
+    -fx-font-size:18.0px;
+    -fx-font-weight:bold;
+}
+.texts:hover
+{
+    /*-fx-text-fill:  #2d83a9;*/
+}
+
+/*buttons*/
+.blue-btn{
+    -fx-background-color: rgb(0, 192, 239);
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: right;
+    -fx-button-type:raised;
+    -fx-font-size:16px;
+    -fx-font-weight:bold ;
+}
+
+.red-btn{
+    -fx-background-color: rgb(208, 11, 47);
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: right;
+    -fx-button-type:raised;
+    -fx-font-size:16px;
+    -fx-font-weight:bold ;
+}    
+.green-btn{
+    -fx-background-color: rgb(0, 166, 90);
+    -fx-text-fill: #ffffff;
+    -fx-text-alignment: right;   
+    -fx-font-size:16px;
+    -fx-button-type:raised;
+    -fx-font-weight:bold ;
+    -fx-pref-width: 100px;
+}
+.cancel-button{
+    -fx-animated: true;
+    -fx-background-color: #DDDDDD;
+    -fx-font-size:16px;
+    -fx-font-weight:bold ;
+    -fx-pref-width: 100px;
+    
+}
+
+/*search field
+*/
+.search-box {	
+    -fx-background-color: -fx-shadow-highlight-color, -fx-text-box-border, -fx-control-inner-background;
+    -fx-background-insets: -1, -1, 0;
+    -fx-background-radius: 14, 14, 14;    
+    -fx-text-fill: -fx-text-inner-color;
+    -fx-prompt-text-fill: derive(-fx-control-inner-background,-30%);
+    -fx-cursor: text;
+}
+
+.search-box:focused {
+    -fx-background-color: -fx-focus-color, -fx-control-inner-background;
+    -fx-background-insets: -1.4, 0;
+    -fx-background-radius: 14;
+}  
+.glyph-icons{
+        -fx-fill: black;
+    }
+.glyph-icons:hover{
+        -fx-fill:  #0000ff;
+    }  
+    
+.rounded {
+    -fx-background-radius: 15;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 15px;
+}
+#hiddenSplitter {
+    -fx-background-color: null;
+    -fx-padding: 10px;
+}
+#hiddenSplitter *.split-pane-divider,
+        #hiddenSplitter *.vertical-grabber,
+        #hiddenSplitter *.horizontal-grabber {
+    -fx-background-color: null;
+    -fx-border-color: null;
+    -fx-padding: 5px;
+}
+.blue-titledPane{
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+    -fx-font-size:13;
+}
+.blue-titledPane>.title{
+    -fx-background-color: #00BCD4,#00C0EF,#00BCD4;
+    -fx-font-weight:bold;
+    -fx-background-insets: 0, 0.1, 0.9;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em;    
+}
+.blue-titledPane:focused > .title {
+    -fx-color: -blue-A400;
+}
+
+.titled-pane > .title {
+    -fx-background-color: -fx-box-border, -fx-inner-border, -fx-body-color;
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 5 5 0 0, 4 4 0 0, 3 3 0 0;
+    -fx-padding: 0.166667em 0.833333em 0.25em 0.833333em;}
+.blue-titledPane> .title> .arrow-button .arrow{
+    -fx-background-color: white;
+}
+.jfx-hamburger{
+    -fx-spacing: 4;
+    -fx-cursor: hand;
+    -fx-padding: 3px;
+}
+
+.jfx-hamburger StackPane{
+    -fx-pref-width: 35px;
+    -fx-pref-height: 4px;
+    -fx-background-color : #ffffff;
+    -fx-background-radius :3px;
+}
+
+.drawer-buttons{
+    -fx-background-color: #f0f0f0;
+    /*-fx-text-alignment: center;*/
+    -fx-text-fill: #000000;
+    
+     /*-fx-font-size:14px;*/
+   
+/*    -fx-alignment:center ;*/
+}
+.drawer-buttons:hover{
+    -fx-background-color:#cccccc;
+   
+}
+.jfx-tab-pane .tab-header-background { 
+    -fx-background-color: lightblue;
+    -fx-fill: lightblue;
+}
+
+.specialservicebuttons{
+    -fx-background-color: navy;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0,0,0);
+     -fx-padding: 10;
+     -fx-font-size:18px;
+     -fx-font-weight:bold;
+     -fx-background-radius: 5;
+}
+.specialservicebuttons:focused{
+    /*-fx-background-color: #f0f0f0;*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0,0,0);
+     -fx-padding: 10;
+     -fx-font-size:18px;
+     -fx-font-weight:bold;
+     -fx-background-radius: 5;
+     -fx-background-radius: 15;
+    -fx-border-color: black;
+    -fx-border-width: 5px;
+    -fx-border-radius: 15px;
+}
+
+

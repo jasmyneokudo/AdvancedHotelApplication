@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1026.0" styleClass="mainFxmlClass" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" stylesheets="@../Styles/style.css" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Dashboard.DashboardController">
+   <children>
+      <HBox alignment="CENTER" layoutX="79.0" layoutY="37.0" prefHeight="176.0" prefWidth="912.0" spacing="40.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="35.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="146.0" prefWidth="263.0" style="-fx-background-color: #1f258c;" styleClass="card-unpadded2" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label contentDisplay="TOP" text="100 GUESTS" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Rounded MT Bold" size="29.0" />
+                     </font>
+                     <graphic>
+                        <FontAwesomeIconView fill="WHITE" glyphName="USERS" size="36" />
+                     </graphic>
+                  </Label>
+               </children>
+            </HBox>
+            <StackPane fx:id="stackPane" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox fx:id="roomsExplanationVbox" alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <Label fx:id="occupiedRooms" prefHeight="106.0" prefWidth="182.0" text="40 Occupied rooms" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                        <Separator prefWidth="200.0" />
+                        <Label fx:id="unoccupiedRooms" prefHeight="96.0" prefWidth="182.0" text="20 Unoccupied Rooms" wrapText="true">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                           <padding>
+                              <Insets left="10.0" right="10.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox fx:id="roomsHbox" alignment="CENTER" prefHeight="146.0" prefWidth="263.0" style="-fx-background-color: #1f2abf;" styleClass="card-unpadded2">
+                     <children>
+                        <Label fx:id="numiberOfRooms" contentDisplay="TOP" text="60 ROOMS" textFill="WHITE">
+                           <font>
+                              <Font name="Arial Rounded MT Bold" size="29.0" />
+                           </font>
+                           <graphic>
+                              <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="36" />
+                           </graphic>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </StackPane>
+            <VBox alignment="CENTER" fillWidth="false" prefHeight="169.0" prefWidth="224.0" style="-fx-background-color: white;" styleClass="rounded" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" prefHeight="51.0" prefWidth="275.0" text="Welcome!" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="33.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="nameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="175.0" text="Chi" textAlignment="CENTER" VBox.vgrow="ALWAYS">
+                     <font>
+                        <Font name="System Bold" size="31.0" />
+                     </font>
+                  </Label>
+                  <HBox alignment="CENTER" prefHeight="31.0" prefWidth="238.0">
+                     <children>
+                        <Label id="currentDate" fx:id="currentDate" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="200.0" text="12-07-2017" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label id="currentTime" fx:id="currentTime" alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="181.0" text="02:15pm" HBox.hgrow="ALWAYS">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+      <Separator layoutY="241.0" prefHeight="0.0" prefWidth="1026.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <VBox alignment="CENTER" layoutX="79.0" layoutY="272.0" prefHeight="332.0" prefWidth="456.0" style="-fx-background-color: white;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="79.0" AnchorPane.rightAnchor="491.0" AnchorPane.topAnchor="272.0" />
+      <StackPane layoutX="573.0" layoutY="272.0" AnchorPane.bottomAnchor="46.0" AnchorPane.rightAnchor="36.0" AnchorPane.topAnchor="272.0">
+         <children>
+            <ImageView fitHeight="332.0" fitWidth="417.0" opacity="0.33" pickOnBounds="true">
+               <image>
+                  <Image url="@../imgs/background.jpg" />
+               </image>
+            </ImageView>
+            <TilePane alignment="CENTER" hgap="10.0" opacity="0.9" prefHeight="332.0" prefTileHeight="150.0" prefTileWidth="150.0" prefWidth="417.0" vgap="10.0">
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="184.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/rm1.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="138.0" fitWidth="143.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/rm2.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="146.0" fitWidth="139.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/rm4.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="162.0" fitWidth="197.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../imgs/rm3.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </TilePane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>
